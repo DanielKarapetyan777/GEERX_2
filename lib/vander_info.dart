@@ -3,14 +3,16 @@ import 'package:flutter/material.dart';
 class VanderName extends StatelessWidget {
   const VanderName({
     Key? key,
+    this.image1 = '',
   }) : super(key: key);
+
+  final String image1;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
       height: 170.12,
-      width: double.infinity,
       child: Row(
         children: [
           SizedBox(
@@ -25,8 +27,7 @@ class VanderName extends StatelessWidget {
                     borderRadius:
                         const BorderRadius.all(Radius.circular(159.52)),
                     image: DecorationImage(
-                        image: Image.asset('../assets/images/1.jpg').image,
-                        fit: BoxFit.cover),
+                        image: Image.asset(image1).image, fit: BoxFit.cover),
                   ),
                 ),
                 Container(
@@ -39,7 +40,7 @@ class VanderName extends StatelessWidget {
                   child: IconButton(
                     iconSize: 18,
                     //padding: const EdgeInsets.all(2),
-                    icon: Image.asset('../assets/icons/I1.png'),
+                    icon: Image.asset('assets/icons/I1.png'),
                     color: Colors.white,
                     onPressed: () {},
                   ),

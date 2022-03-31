@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/conponents/bottom_nav_bar.dart';
+import 'package:flutter_application_2/conponents/center_buttons_list.dart';
+import 'package:flutter_application_2/conponents/product_info_iist1.dart';
+import 'package:flutter_application_2/conponents/product_info_iist2.dart';
+import 'package:flutter_application_2/conponents/product_info_iist3.dart';
 import 'package:flutter_application_2/vander_info.dart';
 
 class HomePage extends StatelessWidget {
@@ -27,7 +32,34 @@ class HomePage extends StatelessWidget {
       ),
       backgroundColor: Colors.white,
       body: Stack(
-        children: const [VanderName()],
+        children: [
+          SizedBox(
+            child: Column(
+              children: [
+                const VanderName(
+                  image1: 'assets/images/1.jpg',
+                ),
+                const CenterButtonsList(),
+                Container(
+                  height: 519,
+                  padding: const EdgeInsets.only(top: 15.7),
+                  //color: Colors.black12,
+                  child: ListView(
+                    children: const [
+                      ProductInfoList1(),
+                      ProductInfoList2(),
+                      ProductInfoList3(),
+                      SizedBox(
+                        height: 125,
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ),
+          const BottomNavBar()
+        ],
       ),
     );
   }
