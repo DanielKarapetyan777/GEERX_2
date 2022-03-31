@@ -36,7 +36,7 @@ class BottomNavBar extends StatelessWidget {
                     IconButton(
                       iconSize: 30,
                       onPressed: () {},
-                      icon: Image.asset('../assets/icons/Vector.png'),
+                      icon: Image.asset('assets/icons/Vector.png'),
                     ),
                     Title(
                       color: Colors.white,
@@ -58,7 +58,7 @@ class BottomNavBar extends StatelessWidget {
                   IconButton(
                     iconSize: 30,
                     onPressed: () {},
-                    icon: Image.asset('../assets/icons/Icon2.png'),
+                    icon: Image.asset('assets/icons/Icon2.png'),
                   ),
                   Title(
                     color: Colors.white,
@@ -79,7 +79,7 @@ class BottomNavBar extends StatelessWidget {
                   IconButton(
                     iconSize: 30,
                     onPressed: () {},
-                    icon: Image.asset('../assets/icons/Icon3.png'),
+                    icon: Image.asset('assets/icons/Icon3.png'),
                   ),
                   Title(
                     color: Colors.white,
@@ -100,7 +100,7 @@ class BottomNavBar extends StatelessWidget {
                   IconButton(
                     iconSize: 30,
                     onPressed: () {},
-                    icon: Image.asset('../assets/icons/Icon4.png'),
+                    icon: Image.asset('assets/icons/Icon4.png'),
                   ),
                   Title(
                     color: Colors.white,
@@ -121,7 +121,7 @@ class BottomNavBar extends StatelessWidget {
                   IconButton(
                     iconSize: 30,
                     onPressed: () {},
-                    icon: Image.asset('../assets/icons/Icon5.png'),
+                    icon: Image.asset('assets/icons/Icon5.png'),
                   ),
                   Title(
                     color: Colors.white,
