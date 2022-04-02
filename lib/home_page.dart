@@ -13,9 +13,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: false,
         elevation: 0,
         backgroundColor: Colors.white,
-        title: Container(
+        leading: Container(
+          margin: const EdgeInsets.all(6),
           height: 37,
           width: 39,
           decoration: const BoxDecoration(
@@ -36,25 +38,27 @@ class HomePage extends StatelessWidget {
           SizedBox(
             child: Column(
               children: [
-                const VanderName(
+                const VendorName(
                   image1: 'assets/images/1.jpg',
                 ),
                 const CenterButtonsList(),
-                Container(
-                  height: 519,
-                  padding: const EdgeInsets.only(top: 15.7),
-                  //color: Colors.black12,
-                  child: ListView(
-                    children: const [
-                      ProductInfoList1(),
-                      ProductInfoList2(),
-                      ProductInfoList3(),
-                      SizedBox(
-                        height: 125,
-                      )
-                    ],
+                Expanded(
+                  child: Container(
+                    //height: 519,
+                    padding: const EdgeInsets.only(top: 15.7),
+                    //color: Colors.black12,
+                    child: ListView(
+                      children: const [
+                        ProductInfoList1(),
+                        ProductInfoList2(),
+                        ProductInfoList3(),
+                        SizedBox(
+                          height: 125,
+                        )
+                      ],
+                    ),
                   ),
-                )
+                ),
               ],
             ),
           ),

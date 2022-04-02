@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class VanderName extends StatelessWidget {
-  const VanderName({
+class VendorName extends StatelessWidget {
+  const VendorName({
     Key? key,
     this.image1 = '',
   }) : super(key: key);
